@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using SimpleCRM.Data.DbContexts;
+using SimpleCRM.Data.Interfaces;
 
 namespace SimpleCRM.DI
 {

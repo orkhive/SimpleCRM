@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
-
-using SimpleCRM.Common.Models;
+using SimpleCRM.Common.Models.Member;
 using SimpleCRM.Data.Entities;
 
 using System;
@@ -17,7 +16,9 @@ namespace SimpleCRM.Logic.Profiles
     {
         public MemberProfile()
         {
-            CreateMap<Member, MemberDto>();
+            CreateMap<Member, MemberDto>().ReverseMap();
+            CreateMap<CreateMemberDto, Member>().ReverseMap();
+            CreateMap<UpdateMemberDto, Member>().ReverseMap();
         }
     }
 }

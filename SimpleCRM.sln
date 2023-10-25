@@ -5,13 +5,17 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCRM.WebAPI", "WebAPI\SimpleCRM.WebAPI.csproj", "{83852EAF-DCB6-47FC-96D7-1293F84E7861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCRM.Common", "Common\SimpleCRM.Common.csproj", "{AF480B09-A2E3-412D-A278-60AE63FBD2EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCRM.Common", "Common\SimpleCRM.Common.csproj", "{AF480B09-A2E3-412D-A278-60AE63FBD2EB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCRM.Data", "Data\SimpleCRM.Data.csproj", "{D9A519FD-D12F-4801-8A0C-7F6475D435BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCRM.Logic", "Logic\SimpleCRM.Logic.csproj", "{E06AF505-7B14-4918-A6D2-FAF686911DAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCRM.Logic", "Logic\SimpleCRM.Logic.csproj", "{E06AF505-7B14-4918-A6D2-FAF686911DAB}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCRM.DI", "DI\SimpleCRM.DI.csproj", "{D49B2E5D-3665-4E50-95F2-566AEDB2394E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCRM.LogicTests", "SimpleCRM.LogicTests\SimpleCRM.LogicTests.csproj", "{89E3E7DD-EB5C-479B-BC53-2846D473869C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{452CB3B6-0B9E-435A-AF1D-69FC134B646B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,16 @@ Global
 		{D49B2E5D-3665-4E50-95F2-566AEDB2394E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D49B2E5D-3665-4E50-95F2-566AEDB2394E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D49B2E5D-3665-4E50-95F2-566AEDB2394E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E3E7DD-EB5C-479B-BC53-2846D473869C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E3E7DD-EB5C-479B-BC53-2846D473869C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E3E7DD-EB5C-479B-BC53-2846D473869C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E3E7DD-EB5C-479B-BC53-2846D473869C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89E3E7DD-EB5C-479B-BC53-2846D473869C} = {452CB3B6-0B9E-435A-AF1D-69FC134B646B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4784803B-5FEE-4469-B04C-1161D800712E}
