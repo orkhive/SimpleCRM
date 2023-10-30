@@ -13,9 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCRM.Logic", "Logic\Si
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCRM.DI", "DI\SimpleCRM.DI.csproj", "{D49B2E5D-3665-4E50-95F2-566AEDB2394E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCRM.LogicTests", "SimpleCRM.LogicTests\SimpleCRM.LogicTests.csproj", "{89E3E7DD-EB5C-479B-BC53-2846D473869C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleCRM.LogicTests", "SimpleCRM.LogicTests\SimpleCRM.LogicTests.csproj", "{89E3E7DD-EB5C-479B-BC53-2846D473869C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{452CB3B6-0B9E-435A-AF1D-69FC134B646B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{AA13F687-747D-4675-A68B-D4990911E690}"
+	ProjectSection(SolutionItems) = preProject
+		EF Commands.txt = EF Commands.txt
+		PostmanCollection.json = PostmanCollection.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

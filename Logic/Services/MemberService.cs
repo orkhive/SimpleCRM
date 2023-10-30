@@ -1,20 +1,16 @@
 ﻿using AutoMapper;
 
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+
+using SimpleCRM.Common.Interfaces.Services;
 using SimpleCRM.Common.Models;
 using SimpleCRM.Common.Models.Member;
 using SimpleCRM.Data.Entities;
 using SimpleCRM.Data.Interfaces.Repositories;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Http.ModelBinding;
-
 namespace SimpleCRM.Logic.Services
 {
-    public class MemberService
+    public class MemberService : IMemberService
     {
         private readonly IMemberRepository memberRepository;
         private readonly IMapper mapper;

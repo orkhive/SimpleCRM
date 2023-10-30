@@ -1,0 +1,172 @@
+{
+  "info": {
+    "_postman_id": "1a3c50c6-df2d-4d01-abae-2c98137865be",
+    "name": "Simple CRM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "5790521"
+  },
+  "item": [
+    {
+      "name": "Members",
+      "item": [
+        {
+          "name": "Get Member",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7066/api/Members/66ec7e9e-1221-4844-b1b5-532238504396",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7066",
+              "path": [
+                "api",
+                "Members",
+                "66ec7e9e-1221-4844-b1b5-532238504396"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Member",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7066/api/Members/66ec7e9e-1221-4844-b1b5-532238504396",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7066",
+              "path": [
+                "api",
+                "Members",
+                "66ec7e9e-1221-4844-b1b5-532238504396"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Query Members",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7066/api/Members?FirstName=Conner",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7066",
+              "path": [
+                "api",
+                "Members"
+              ],
+              "query": [
+                {
+                  "key": "FirstName",
+                  "value": "Conner"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Member",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Conner\",\r\n  \"lastName\": \"Staplehurst\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7066/api/Members",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7066",
+              "path": [
+                "api",
+                "Members"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Patch Member",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n  {\r\n    \"operationType\": 0,\r\n    \"path\": \"FirstName\", \r\n    \"value\": \"Conner\" \r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7066/api/Members/66ec7e9e-1221-4844-b1b5-532238504396",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7066",
+              "path": [
+                "api",
+                "Members",
+                "66ec7e9e-1221-4844-b1b5-532238504396"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Member",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Update\",\r\n  \"lastName\": \"Staplehurst\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7066/api/Members/c6e68c0f-8585-46c9-99f3-9bb77c2e23cc",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7066",
+              "path": [
+                "api",
+                "Members",
+                "c6e68c0f-8585-46c9-99f3-9bb77c2e23cc"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

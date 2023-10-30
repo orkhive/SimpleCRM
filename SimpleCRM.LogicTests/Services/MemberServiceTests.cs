@@ -7,7 +7,7 @@ using SimpleCRM.Data.Interfaces.Repositories;
 using SimpleCRM.Common.Models.Member;
 using SimpleCRM.Common.Models;
 using SimpleCRM.Data.Entities;
-using System.Web.Http.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace SimpleCRM.Logic.Services.Tests
 {

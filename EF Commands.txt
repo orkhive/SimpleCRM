@@ -1,0 +1,5 @@
+--Used To Create The Initial Database
+Add-Migration InitialCreate
+
+--Used To Preform All Migrations
+Update-Database

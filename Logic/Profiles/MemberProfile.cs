@@ -19,6 +19,7 @@ namespace SimpleCRM.Logic.Profiles
             CreateMap<Member, MemberDto>().ReverseMap();
             CreateMap<CreateMemberDto, Member>().ReverseMap();
             CreateMap<UpdateMemberDto, Member>().ReverseMap();
+            CreateMap<UpdateMemberDto, MemberDto>().ReverseMap();
         }
     }
 }
